@@ -1,0 +1,10 @@
+<nav class="nav-container">
+    <img src="../../../../assets/img/samurai.png" alt="sword girl">
+    <ul class="nav-listed">
+        <li class="nav-listed__item" *ngFor="let item of nav">
+            <a class="nav-listed__item--link" routerLink="{{ item.link }}">
+                {{item.name}}
+            </a>
+        </li>
+    </ul>
+</nav>

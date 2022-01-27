@@ -1,0 +1,96 @@
+
+   .nav-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    position:fixed;
+    flex-direction: column;
+    background-color: #000000;
+    max-height: 250px;
+
+    
+    img{
+        width: 60vw;
+        max-width: 300px;
+        max-height: 300px;
+        height: 20vh;
+        position:absolute;
+        margin-left: 50px;
+
+    }
+
+    .nav-listed{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 80vw;
+        margin-left:5vw;
+        margin-top: 2.5vh;
+    }
+    .nav-listed__item{
+        width:10vw;
+        height: 5vh;
+        z-index: 2;
+    }
+    .nav-listed__item--link{
+        font-size: 1rem;
+        margin-top: 20px;
+        font-weight: bold;
+        color: whitesmoke;
+        background: #666666;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 5px 5px rgba(255,255,255,0.5);
+    }
+    .nav-listed__item--link:hover{
+        transition: all 0.5s;
+        font-size: 1.1rem;
+        font-style:italic;
+        color:rgb(247, 156, 20);
+        
+    }
+    .nav-listed__item:hover{
+        background-image: url(../../../../assets/img/dragon.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: all 0.5s;
+        width:20vw;
+        height:10vh;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 2560px) {
+    .nav-container{
+        flex-direction: row;
+        padding: 40px;
+        
+    img{
+        width: 60vw;
+        height: 20vh;
+        max-width: 300px;
+        max-height: 300px;
+        margin-left: 500px;
+
+    }
+    .nav-listed__item--link{
+        font-size: 1rem;
+        font-weight: bold;
+        color: whitesmoke;
+        background: #666666;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        text-shadow: 0px 5px 5px rgba(255,255,255,0.5);
+    }
+    .nav-listed__item--link:hover{
+        transition: all 0.5s;
+        font-size: 1.2rem;
+        font-style:italic;
+        color:rgb(247, 156, 20);
+        
+    }
+}
+}
+

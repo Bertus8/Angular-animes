@@ -1,0 +1,13 @@
+<div class="container">
+<h2>Anime Characters</h2>
+<div *ngIf="characters.length" class="character-container">
+    <div *ngFor="let character of characters" class="character-container__card"
+    style="background-image: url({{character.img}}); background-size: contain; background-position: center; background-repeat: no-repeat;" routerLink="{{character.id}}"
+    >
+    <ul class="info-container">
+        <li class="info-item"><h6>{{character.name}}</h6></li>
+    </ul>
+ </div>
+
+</div>
+</div>

@@ -1,0 +1,22 @@
+.anime-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    
+    h2{
+        color: whitesmoke;
+    }
+    p{
+        color: whitesmoke;
+    }
+
+    .anime-container__card{
+        margin-top: 400px;
+
+    img{
+        max-width: 100vw;
+        max-height:100vh;
+    }
+    }
+}

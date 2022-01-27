@@ -1,0 +1,54 @@
+.container{
+h6 {
+  padding: 10px;
+  margin: 80px;
+  border-radius: 10px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  background-color: transparent;
+  font-size: 2rem;
+  margin-top: 200px;
+  text-shadow: 0px 10px 10px rgb(247, 156, 20);
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    position:absolute;
+    margin-left: 80px;
+    padding:20px;
+}
+
+.character-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__card {
+    padding:100px;
+    margin-top: 400px;
+    height: 200px;
+    width: 30%;
+
+    &:hover{
+      cursor: pointer;
+      background-image: url(../../../assets/img/dragon.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+}
+
+@media (min-width: 768px) and (max-width: 2560px) {
+  h2{
+    padding: 200px;
+}
+}

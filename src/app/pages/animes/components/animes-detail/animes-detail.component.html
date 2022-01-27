@@ -1,0 +1,10 @@
+<div *ngIf="anime" class="anime-container">
+    <div class="anime-container__card">
+      <h2>{{ anime.name }}</h2>
+      <img src="{{ anime.img }}" alt="{{ anime.name }}" />
+      <ul>
+          <li><p>Year: {{ anime.year }}</p></li>
+          <li><p>Genre: {{anime.genre}}</p></li>
+      </ul>
+  </div>
+  
