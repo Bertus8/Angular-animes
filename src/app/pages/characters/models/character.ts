@@ -1,5 +1,5 @@
 export interface ICharacter{
-    id: Number;
+    id: string;
     name: string;
     anime: string;
     powers: string;
