@@ -1,5 +1,5 @@
 export interface IAnimes {
-    id: string;
+    _id: string;
     name: string;
     year: Number;
     genre: string;

@@ -1,6 +1,6 @@
 <h2>Animes</h2>
 <div *ngIf="animes.length" class="anime-container">
-    <div *ngFor="let anime of animes" class="anime-container__card" style="background-image: url({{anime.img}}); background-size: contain; background-position:center; background-repeat: no-repeat;" routerLink="{{anime.id}}">
+    <div *ngFor="let anime of animes" class="anime-container__card" style="background-image: url({{anime.img}}); background-size: contain; background-position:center; background-repeat: no-repeat;" routerLink="{{anime._id}}">
         <h6>{{anime.name}}</h6>
     </div>
 </div>

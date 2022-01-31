@@ -16,8 +16,8 @@ public animes: IAnimes[] = []
     this.animesService.getAllAnimes().subscribe((data:any) => {
       const apiResults: IAnimes[] = data;
 
-      const formattedAnimes = apiResults.map(({ id, name, year, genre, img}) =>({
-        id, name, year, genre, img
+      const formattedAnimes = apiResults.map(({ _id, name, year, genre, img}) =>({
+        _id, name, year, genre, img
       }));
       this.animes = formattedAnimes
 

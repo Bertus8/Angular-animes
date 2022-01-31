@@ -13,6 +13,7 @@ export class AnimesService {
   public getAllAnimes() {
     return this.httpCLient.get(this.animesURL)
   }
+  
 
   public getAnime(idAnime: any) {
     return this.httpCLient.get(`${this.animesURL}/${idAnime}`)

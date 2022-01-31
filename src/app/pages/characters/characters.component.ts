@@ -16,8 +16,8 @@ export class CharactersComponent implements OnInit {
     this.charactersService.getAllCharacters().subscribe((data:any)=>{
       const apiResults: ICharacter[] = data;
 
-      const formattedCharacters = apiResults.map(({ id, name, anime, powers, img }) => ({
-        id, name, anime, powers, img
+      const formattedCharacters = apiResults.map(({ _id, name, anime, powers, img }) => ({
+        _id, name, anime, powers, img
       }));
       this.characters = formattedCharacters
     })
