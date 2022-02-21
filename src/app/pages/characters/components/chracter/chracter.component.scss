@@ -3,6 +3,7 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    height: 90vh;
     h2{
         color: whitesmoke;
     }
@@ -11,11 +12,11 @@
     }
 
     .character-container__card{
-        margin-top: 400px;
+        margin-top: 35vh;
 
     img{
-        max-width: 100vw;
-        max-height:100vh;
+        max-width: 80vw;
+        max-height:40vh;
     }
     }
 }

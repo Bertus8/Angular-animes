@@ -30,12 +30,13 @@ h2{
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  max-height: 80vh;
+  overflow-y: scroll;
 
   &__card {
-    padding:100px;
-    margin-top: 400px;
+    margin-top: 30vh;
     height: 200px;
-    width: 30%;
+    width: 40%;
 
     &:hover{
       cursor: pointer;
