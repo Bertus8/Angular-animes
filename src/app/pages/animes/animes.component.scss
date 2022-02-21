@@ -34,16 +34,34 @@ h2{
         padding:100px;
         height: 200px;
         width: 30%;
-  
+        
         &:hover{
-          cursor: pointer;
-      }
-      }
+            cursor: pointer;
+          }
 
+.anime-container::-webkit-scrollbar{
+    background-color: rgb(0, 0, 0);
+    width:2px;
+    border-radius: 20px
+
+}
+.anime-container::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 3px;
+}
+.anime-container::-webkit-scrollbar-track {
+    width: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px
+}
+}        
       @media (min-width: 768px) and (max-width: 2560px) {
         h2{
           padding: 200px;
       }
+      
       }
 
 
